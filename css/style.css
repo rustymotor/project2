@@ -26,7 +26,7 @@ body{
 
 header{
     width:100%;
-    height:1000px;
+    height:1080px;
 }
 
 .slides{
@@ -38,7 +38,7 @@ header{
 .slides>div{
     position:absolute;
     width:100%;
-    height:1000px;
+    height:100%;
     top:0;
     left:0;
     z-index:-1;
@@ -81,14 +81,23 @@ main{
     width:100%;
     height:100%;
 }
+
+.c1h{
+    
+    width:100%px;
+    height:391px;
+    padding:105px 40px 100px;
+}
+.c1h>h3{
+    width:1840px;
+    height:186px;
+    font-size:52px;
+    letter-spacing: -2.6px;
+    line-height: 62px;
+}
 .content1{
     width:100%;
-    height:940.7px;
-}
-.c1h{
-    font-size:3em;
-    width:1000px;
-    padding:105px 40px 100px;
+    height:918.3px;
 }
 .content1>.fx{
     width:100%;
@@ -104,7 +113,6 @@ main{
 .content1>.fx>div>img{
     position:absolute;
     width:100%;
-   
     top:0;
     z-index:-1;
     opacity:0;
@@ -116,26 +124,28 @@ main{
 /* content2 ------------------------------------------------------*/
 .content2{
     width:100%;
-    height:1152.28px;
+    height:1377.88px;
     padding:150px 40px 0 40px;
 }
 .content2>.fx{
     width:100%;
     gap:50px;
 }
-.content2>.fx>.inner{
+.content2>.fx>div{
     width:827.800px;
     height:509.638px;
     position:relative;
 }
-
+.content2 .inner21{
+    padding:0 100px 70px 100px;
+}
 .content2 .hyundai{
     top: 0%;
     left:40px;
     width:626.6px;
     height:352.462px;
-
 }
+
 .content2 .ins{
     top: 0%;
     right:40px;
@@ -165,22 +175,20 @@ main{
 /* content3-------------------------------- */
 .content3{
     width:100%;
-   
-}
-.content3>.fx{
-    width:100%;
-}
-.content3>.inner3{
-    width:100%;
-    height:305.962px;
+    height:324.47px;
     margin:143px 0 150px;
     padding:0 40px;
-
+    
+}
+.content3>.inner3{
+    width:1840px;
+    height:100%;
     gap:55px;
+    
 }
 .content3>.inner3>div{
-    width:396.4px;
-    height:306px;
+    width:430px;
+    height:100%;
 
 }
 .content3 .c3d1{
@@ -207,46 +215,59 @@ main{
 /* content4-------------------------------- */
 .content4{
     width:100%;
-    height:767px;
-    
-    border: 0.8px solid white;
+    height:825.61px;
+    border-top: 1px solid white;
 }
 .inner4{
     width:100%;
     height:100%;
 }
 .pinksquare{
-    padding:134px 187.5px 116px 187.5px;
+    padding:144px 201.594px 124.797px 201.594px;
     border-right:0.8ps solid white;
-    width:892.8px;
-    height:100%;
+    width:960px;
+    height:824.61px;
 }
 .pinksquare video{
-    width:517px;
-    height:517px;
+    width:555.812px;
+    height:555.812px;
 }
 .c4d2{
     display:flex;
     flex-direction:column;
-    width:445.8px;
+    width:480.25px;
+    height:100%;
     justify-content: space-between;
+    border-right:1px solid white;
 }
 .c4d2 .digi{
     padding:60px 40px 0;
     width:100%;
     height:206.6px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.c4d2 .digi .plus3{
-    width:243px;
+.c4d2 .digi .p346{
+    width:399.25px;
     height:66px;
+    font-size:60px;
+    font-weight:600;
+    letter-spacing: -3px;
+    line-height:60px;
+    text-align:left;
 }
 .c4d2 .digi .plus3digi{
-    width:365.8px;
-    height:60px;
+    width:243px;
+    height:65.97px;
+    font-size:18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
 }
 .c4d2 .pape{
     width:100%;
-    height:229.4px;
+    height:334.797px;
     overflow:hidden;
 }
 .c4d2 .pape img{
@@ -255,16 +276,19 @@ main{
     object-fit: cover;
 }
 .c4d3{
-    width:446.2px;
+    width:479.75px;
     height:100%;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
 }
-.c4d3 .where{
+.c4d3 .wseoul{
     width:100%;
     height:173px;
     padding: 65px 40px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .c4d3 .where .address{
     width:249px;
