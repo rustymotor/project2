@@ -89,11 +89,32 @@ main{
     padding:105px 40px 100px;
 }
 .c1h>h3{
+    display:inline-block;
     width:1840px;
     height:186px;
     font-size:52px;
     letter-spacing: -2.6px;
     line-height: 62px;
+}
+.c1h .dot{
+    display:inline-block;
+    width:32px;
+    height:32px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation:dot 2.6s linear /* cubic-bezier(0.42, 0, 0.39, 1) */ infinite alternate running;
+    transform-origin: 50% 50%;
+}
+@keyframes dot{
+ 0%{
+    width:32px;
+    height:32px;
+    
+ }
+ 100%{
+    width:29px;
+    height:29px;
+ }
 }
 .content1{
     width:100%;
@@ -109,6 +130,10 @@ main{
     height:100%;
     border:1px solid white;
     overflow: hidden;
+    padding:47px 48px 43px 48px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content1>.fx>div>img{
     position:absolute;
@@ -121,6 +146,30 @@ main{
 .content1>.fx>div:hover >img{
     opacity:1;
 }
+.content1 .web1>p{
+    margin-bottom:21px;
+    font-size:18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.content1 .web1>h4{
+    margin:25px 0 14px 0;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    line-height: 49px;
+}
+.content1 .web2{
+    width:384px;
+    height:84px;
+    bottom:0;
+}
+.content1 .web2 p{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 27px;
+    margin-bottom:1px;
+}
 /* content2 ------------------------------------------------------*/
 .content2{
     width:100%;
@@ -129,11 +178,12 @@ main{
 }
 .content2>.fx{
     width:100%;
-    gap:50px;
+    column-gap:50px;
+    row-gap:133px;
 }
 .content2>.fx>div{
-    width:827.800px;
-    height:509.638px;
+    width:895px;
+    height:547.438px;
     position:relative;
 }
 .content2 .inner21{
@@ -224,7 +274,7 @@ main{
 }
 .pinksquare{
     padding:144px 201.594px 124.797px 201.594px;
-    border-right:0.8ps solid white;
+    border-right:1px solid white;
     width:960px;
     height:824.61px;
 }
@@ -241,6 +291,7 @@ main{
     border-right:1px solid white;
 }
 .c4d2 .digi{
+ 
     padding:60px 40px 0;
     width:100%;
     height:206.6px;
@@ -260,9 +311,12 @@ main{
 .c4d2 .digi .plus3digi{
     width:243px;
     height:65.97px;
-    font-size:18px;
-    font-weight: 400;
-    line-height: 27px;
+    
+}
+.c4d2 .digi .plus3digi h6{
+    font-size:15px;
+    font-weight: 600;
+    line-height: 17px;
     text-align: left;
 }
 .c4d2 .pape{
@@ -272,8 +326,7 @@ main{
 }
 .c4d2 .pape img{
     width:100%;
-   
-    object-fit: cover;
+    object-fit: top/cover;
 }
 .c4d3{
     width:479.75px;
@@ -290,39 +343,48 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
-.c4d3 .where .address{
+.c4d3 .wseoul .address{
     width:249px;
     height:34px;
+    font-size:15px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+
 }
-.c4d3 .where .call{
+.c4d3 .wseoul .call{
     width:200px;
     height:54px;
+    font-size:18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
 }
 .c4d3 .help{
-    border-top:0.8px solid white;
     width:100%;
-    height:495.43px;
-    padding:65px 40px 290px;
+    height:517.83px;
+    padding:65px 40px 311.828px 40px;
+    border-top: 1px solid white;
 }
 .c4d3 .help .help2{
     width:284px;
-    height:139.6px;
+    height:140px;
 }
 .c4d3 .help .help2 h5{
     width:100%;
     height:64px;
 }
 .c4d3 .help .help2 a{
-    width:180.54px;
-    height:40.6px;
+    width:180.94px;
+    height:41px;
     padding:11px 55px;
-    border:0.8px solid #fff;
+    border:1px solid #fff;
     margin-top:35px;
 }
 .content5{
     width:100%;
     height:64px;
-    border:0.8px solid #fff;
+    border:1px solid #fff;
 }
 .content5 .marquee span{
     display:inline-block;
@@ -344,15 +406,111 @@ main{
 }
 .content6{
     width:100%;
-    height:296.73px;
-    background:green;
+    height:303px;
     padding:28px 40px 0;
     margin-top:60px;
 }
+.content6>img{
+    width:718px;
+    height:275px;
+}
 footer{
     width:100%;
-   
     height:170px;
-    background:yellow;
     padding:0 40px 21px;
+}
+footer>.fx{
+    width:100%;
+    height:100%;
+}
+footer>.fx>.fd1{
+    width:423.062px;
+    height:100%;
+}
+footer>.fx>.fd2{
+    width:423.078px;
+    height:100%;
+}
+footer>.fx>.fd3{
+    width:913.844px;
+    height:100%;
+}
+.fd11{
+    margin-top:65px;
+    width:100%;
+    height:27px;
+    margin-bottom:10px;
+}
+.fd12{
+    width:100%;
+    height:27px;
+    margin-bottom:10px;
+    font-size:11px;
+    font-weight: 400;
+    line-height:27px;
+}
+.fd2{
+    padding-top:75px;
+}
+.fd21{
+    width:78px;
+    height:21px;
+    margin:0 3px 10px 3px;
+}
+.fd2 span{
+    font-size:12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+.fd22{
+    width:116.58px;
+    height:21px;
+    margin:0 3px 10px 3px;
+}
+
+.fd23{
+    width:103.422px;
+    height:21px;
+    margin:0 3px 10px 3px;
+}
+.fd3{
+    padding-bottom:41px;
+}
+.fd3>label{
+    width:626px;
+    height:100%;
+}
+.fd3>label>p{
+    font-size:27px;
+    font-weight: 600;
+    letter-spacing: -0.54px;
+    line-height: 32px;
+}
+.fd3>label>span{
+    margin-top:16px;
+    font-size:27px;
+    font-weight: 600;
+    letter-spacing: -0.54px;
+}
+.fd3 button{
+    width:66px;
+    height:66px;
+    border:1px solid white;
+    margin-left:7px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+.top_btn{
+    position:fixed;
+    border-radius:50%;
+    background-color: white;
+    bottom:146px;
+    right:40px;
+    font-size:18px;
+    font-weight: 400;
+    width:68px;
+    height:68px;
+    transition:opacity 0.3s;
+    z-index:100;
 }
