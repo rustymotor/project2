@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -53,7 +53,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 /* ====================================
-    ======= comment ======    
+    ======= comment ======
 ==================================== */
 
 :root {
@@ -152,10 +152,8 @@ h6 {
   position: absolute;
 }
 p{
-  padding:5px;
+  padding:0.5rem;
 }
 /* ====================================
-    ======= global classes ======    
+    ======= global classes ======
 ==================================== */
-
-
