@@ -53,18 +53,18 @@ gsap.from('.content4',{
 });
 
 
-const ani9 = gsap.timeline();
-ani9
-.from('.pinksquare>img',{scale:0})
-.to('.pinksquare>img',{scale:1})
-
+const ani9 = gsap.timeline({ toggleActions: 'play none reset play ', duration: 1 });
+//ani9
+//.from('.pinksquare>img',{scale:0})
+//.to('.pinksquare>img',{scale:1})
+ani9.fromTo('.pinksquare>img', { scale: 0, autoAlpha: 0 }, { scale: 1.3, autoAlpha: 1 });
 ScrollTrigger.create({
-    animation:ani9,
-    trigger:'.pinksquare',
-    start:'0% 0%',
-    end:'100% 80%', 
-    // end:'+=4000', 
-    // scrub:true,
-    // pin:true, 
-    // anticipatePin:1,
-})
+	animation: ani9,
+	trigger: '.content4',
+	start: 'top 0%',
+	end: '100% 80%',
+	// end:'+=4000',
+	 scrub:true,
+	// pin:true,
+	// anticipatePin:1,
+});
