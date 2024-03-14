@@ -51,3 +51,20 @@ gsap.from('.content4',{
     y:200,
     opacity:0,
 });
+
+
+const ani9 = gsap.timeline();
+ani9
+.from('.pinksquare>img',{scale:0})
+.to('.pinksquare>img',{scale:1})
+
+ScrollTrigger.create({
+    animation:ani9,
+    trigger:'.pinksquare',
+    start:'0% 0%',
+    end:'100% 80%', 
+    // end:'+=4000', 
+    // scrub:true,
+    // pin:true, 
+    // anticipatePin:1,
+})
