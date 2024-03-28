@@ -219,7 +219,7 @@ main {
 /* content3-------------------------------- */
 .content3 {
   width: 100%;
-  height: 32.447prem;
+  height: 32.447rem;
   margin: 14.3rem 0 15rem;
   padding: 0 4rem;
 }
@@ -315,7 +315,7 @@ main {
 }
 .c4d2 .pape img {
   width: 100%;
-  object-fit: top/cover;
+  object-fit: cover;
 }
 .c4d3 {
   width: 47.975rem;
@@ -384,13 +384,13 @@ main {
   line-height: 5.2rem;
   text-align: start;
   vertical-align: baseline;
-  white-space-collapse: collapse;
 }
 .content5 .marquee {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: #fff;
+  padding-top:0.5rem;
 }
 .content6 {
   width: 100%;
