@@ -25,13 +25,18 @@ header {
   height: 100vh;
 }
 .slides {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-.slides > div {
-  position: absolute;
+.slides>div{
+  display:flex;
+  width:100%;
+  height:100%;
+}
+.slides>div> div {
+  /* position: absolute; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -93,7 +98,7 @@ main {
   height: 3.2rem;
   background-color: #fff;
   border-radius: 50%;
-  animation: dot 2.6s linear /* cubic-bezier(0.42, 0, 0.39, 1) */ infinite
+  animation: dot 2.6s  cubic-bezier(0.42, 0, 0.39, 1)  infinite
     alternate running;
   transform-origin: 50% 50%;
 }
@@ -102,9 +107,13 @@ main {
     width: 3.2rem;
     height: 3.2rem;
   }
+  50% {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   100% {
-    width: 2.9rem;
-    height: 2.9rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
 }
 .content1 {
@@ -500,4 +509,7 @@ footer > .fx > .fd3 {
 }
 .top_btn>i{
     color:#000;
+}
+.swiper_button_next{
+  background-color: white;
 }
