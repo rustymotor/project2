@@ -290,12 +290,21 @@ main {
   justify-content: space-between;
 }
 .c4d2 .digi .p346 {
-  width: 39.925rem;
+  width: 12rem;
   height: 6.6rem;
   font-size: 6rem;
   font-weight: 600;
   letter-spacing: -0.3rem;
   line-height: 6rem;
+  text-align: left;
+}
+.digi span{
+  width: 3rem;
+  height: 6.6rem;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: -0.3rem;
+  line-height: 5rem;
   text-align: left;
 }
 .c4d2 .digi .plus3digi {
