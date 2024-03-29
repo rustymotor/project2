@@ -11,7 +11,8 @@ addEventListener('scroll',function(){
 })
 
 
-document.querySelector('.top_btn').addEventListener('click',()=>{
+$('.top_btn').on('click',function(e){
     e.preventDefault();
-    document.querySelector('html,body').scrollTo({top:0,behavior:'smooth'});
-})
+    $('html,body').animate({scrollTop:0},500,'easeOutQuart');
+
+  })

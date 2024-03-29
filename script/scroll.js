@@ -1,4 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
 gsap.from('.c1h',{
     scrollTrigger:
     {
@@ -22,53 +21,48 @@ gsap.from('.content1',{
     start:'0% 0%', 
     end:'100% 80%',
     id:'박스5',
-    scrub:1,
+    // scrub:1,
     },
     y:200,
     opacity:0,
 });
 
 
-const ani2 = gsap.timeline({/* repeat:-1, yoyo:true */}); //-1은 무한반복, yoyo는 반복
-ani2
-.from('.inner21',{y:100,autoAlpha:0})
-.from('.inner22',{y:100,autoAlpha:0})
-.from('.inner23',{y:100,autoAlpha:0})
-.from('.inner24',{y:100,autoAlpha:0})
+gsap.set('.content2 .ani2', { y: 100, opacity: 0 });
+gsap.to('.content2 .ani2', {
+	y: 0,
+	opacity: 1,
+	duration: 1,
+	stagger: 0.5,
+	scrollTrigger: {
+		trigger: '.content2',
+		start: '0% 30%',
+		end: '60% 40%',
+		scrub: true,
+		// pin:true, //화면고정
 
-ScrollTrigger.create({
-    animation:ani2,
-    trigger:'.content2',
-    start:'0% 30%',
-    end:'60% 40%',
-    scrub:true,
-    // pin:true, //화면고정
+		markers: true,
+		id: 'content2',
+	},
+});
 
-    markers:true,
-    id:'content2'
-}) 
+gsap.set('.content3 .ani3', { x: 100, opacity: 0 });
+gsap.to('.content3 .ani3', {
+	x: 0,
+	opacity: 1,
+	duration: 1,
+	stagger: 0.5,
+	scrollTrigger: {
+		trigger: '.content3',
+		start: '0% 30%',
+		end: '60% 40%',
+		scrub: true,
+		// pin:true, //화면고정
 
-const ani3= gsap.timeline({});
-
-ani3
-.from('.prism',{x:100,autoAlpha:0})
-.from('.card',{x:130,autoAlpha:0})
-.from('.trip',{x:160,autoAlpha:0})
-.from('.kookmin',{x:190,autoAlpha:0})
-
-ScrollTrigger.create({
-    animation:ani3,
-    trigger:'.content3',
-    start:'0% 30%',
-    end:'100% 40%',
-    scrub:true,
-    // pin:true, //화면고정
-
-    // markers:true,
-    id:'content3',
-    delay:1,
-})
-
+		markers: true,
+		id: 'content3',
+	},
+});
 gsap.from('.content4',{
     scrollTrigger:
     {
