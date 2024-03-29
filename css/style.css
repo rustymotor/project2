@@ -67,15 +67,35 @@ header h1:nth-of-type(2) {
   color: #fff;
   margin: 0% 0 0 70rem;
 }
+.mySwiper{
+  height:100vh;
+}
 .titlep {
+  position:relative;
   margin: 10rem 0 0 0;
   font-size: 2rem;
+  overflow:hidden;
 }
 .titlep2 {
+  position:relative;
   margin: 5rem 0 0 70rem;
   font-size: 2rem;
+  overflow:hidden;
 }
-
+.titlep>p,
+.titlep2>p{
+  position:absolute;
+  top:0;
+  left:-100%;
+}
+/* @keyframes showText{
+  0%{
+    left:-100%;
+  }
+  100%{
+    left:0;
+  }
+} */
 main {
   width: 100vw;
 }
