@@ -41,7 +41,7 @@ gsap.to('.content2 .ani2', {
 		scrub: true,
 		// pin:true, //화면고정
 
-		markers: true,
+		//markers: true,
 		id: 'content2',
 	},
 });
@@ -59,7 +59,7 @@ gsap.to('.content3 .ani3', {
 		scrub: true,
 		// pin:true, //화면고정
 
-		markers: true,
+		//markers: true,
 		id: 'content3',
 	},
 });
