@@ -576,3 +576,21 @@ footer > .fx > .fd3 {
 .validation>a:nth-of-type(2)>img{
   height:4rem;
 }
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  opacity:0;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  position:absolute;
+}
+.swiper-button-next{
+  right:3%;
+}
+.swiper-button-prev{
+  left:3%;
+}
+.swiper-button-next img,
+.swiper-button-prev img{
+  width:4rem;
+}
