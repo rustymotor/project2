@@ -141,12 +141,16 @@ main {
   height: 91.83rem;
 }
 .content1 > .fx {
+  gap:0;
   width: 100%;
   height: 100%;
 }
-.content1 > .fx > div {
+.content1 > .fx>.fx{
+  width:50%;
+}
+.content1 > .fx >.fx> div {
   position: relative;
-  width: 25%;
+  width: 50%;
   height: 100%;
   border: 0.1rem solid white;
   overflow: hidden;
@@ -155,7 +159,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.content1 > .fx > div > img {
+.content1 > .fx  img {
   position: absolute;
   width: 100%;
   top: 0;
@@ -164,7 +168,7 @@ main {
   opacity: 0;
   transition: all 1s;
 }
-.content1 > .fx > div:hover > img {
+.content1 > .fx > .fx>div:hover  img {
   opacity: 1;
 }
 .content1 .web1 > p {
@@ -193,63 +197,70 @@ main {
 /* content2 ------------------------------------------------------*/
 .content2 {
   width: 100%;
-  height: 137.788rem;
-  padding: 15rem 4rem 0 4rem;
+  height: 130rem;
+  margin-top:20rem;
+  /* padding: 15rem 4rem 0 4rem; */
 }
 .content2 > .fx {
   width: 100%;
-  column-gap: 5rem;
-  row-gap: 13.3rem;
 }
 .content2 > .fx > div {
-  width: 89.5rem;
+  width:50%;
+  /* width: 89.5rem; */
   height: 54.7438rem;
-  position: relative;
+  /* border:3px solid red; */
+
 }
-.content2 .inner21 {
-  padding: 0 10rem 7rem 10rem;
-}
-.content2 .hyundai {
-  top: 0%;
-  left: 4rem;
-  width: 62.66rem;
-  height: 35.2462rem;
-}
-.content2 .ins {
-  top: 0%;
-  right: 4rem;
-  width: 82.78rem;
-  height: 46.4962rem;
-}
-.content2 .antian {
-  bottom: 10%;
-  left: 4rem;
-  width: 82.78rem;
-  height: 46.5648rem;
-}
-.content2 .seoul {
-  bottom: 10%;
-  right: 10%;
-  width: 62.78rem;
-  height: 35.3138rem;
+.content2 > .fx img{
+  object-fit: cover;
 }
 .content2 img {
   width: 100%;
 }
+.content2 h2{
+  display:inline-block;
+}
+.content2 .ani2{
+  position:relative;
+}
+.content2 a{
+  border:1px solid #fff;
+  padding:0.5rem 2rem;
+  margin:100rem 0 0.5rem 2rem;
+  border-radius:1.2rem;
+  color:#fff;
+  font-size:1.2rem;
+  width:2rem;
+}
+.content2 .hyundai {
+ padding:12rem ;
+}
+.content2 .seoul {
+ padding:12rem ;
+}
+.content2 .ins {
+ padding:3rem ;
+}
+.content2 .antian {
+ padding:3rem ;
+}
+
+
 /* content3-------------------------------- */
 .content3 {
   width: 100%;
-  height: 32.447rem;
-  margin: 14.3rem 0 15rem;
+  height: 50rem;
+
   padding: 0 4rem;
 }
 .content3 > .inner3 {
-  width: 184rem;
+  width: 100%;
   height: 100%;
-  gap: 5.5rem;
+
 }
-.content3 > .inner3 > div {
-  width: 43rem;
+
+.content3 > .inner3 > div> div {
+
   height: 100%;
 }
 .content3 .c3d1 {
@@ -259,7 +270,7 @@ main {
 .content3 img {
   width: 100%;
 }
-.content3 > .inner3 > div .c3d2 {
+.content3 > .inner3 .c3d2 {
   width: 100%;
   height: 3.2rem;
   margin-top: 1.7rem;
@@ -268,7 +279,7 @@ main {
   font-family: Inter, sans-serif;
   font-size: 2.7rem;
 }
-.content3 > .inner3 > div .c3da {
+.content3 > .inner3 .c3da {
   width: 100%;
   height: 2.3rem;
   margin-top: 1.1rem;
@@ -282,35 +293,37 @@ main {
 .inner4 {
   width: 100%;
   height: 100%;
+  border:1px solid #fff;
 }
 .pinksquare {
-  padding: 14.4rem 20.1594rem 12.4797rem 20.1594rem;
   border-right: 0.1rem solid white;
-  width: 96rem;
-  height: 82.461rem;
+  width: 50%;
+  height:100%;
+  /* overflow:hidden; */
+  padding:20rem;
 }
-.pinksquare video {
-  width: 55.5812rem;
-  height: 55.5812rem;
+.pinksquare img{
+  width: 90%;
+
 }
 .c4d2 {
   display: flex;
   flex-direction: column;
-  width: 48.025rem;
+  width: 25%;
   height: 100%;
   justify-content: space-between;
   border-right: 0.1rem solid white;
 }
 .c4d2 .digi {
   padding: 6rem 4rem 0;
-  width: 100%;
+  width: 40%;
   height: 20.66rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .c4d2 .digi .p346 {
-  width: 12rem;
+  width: 100%;
   height: 6.6rem;
   font-size: 6rem;
   font-weight: 600;
@@ -319,7 +332,7 @@ main {
   text-align: left;
 }
 .digi span{
-  width: 3rem;
+  width: 100%;
   height: 6.6rem;
   font-size: 6rem;
   font-weight: 600;
@@ -328,7 +341,7 @@ main {
   text-align: left;
 }
 .c4d2 .digi .plus3digi {
-  width: 24.3rem;
+  width: 100%;
   height: 6.597rem;
 }
 .c4d2 .digi .plus3digi h6 {
@@ -347,7 +360,7 @@ main {
   object-fit: cover;
 }
 .c4d3 {
-  width: 47.975rem;
+  width: 25%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -362,7 +375,7 @@ main {
   justify-content: space-between;
 }
 .c4d3 .wseoul .address {
-  width: 24.9rem;
+  width: 100%;
   height: 3.4rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -370,8 +383,7 @@ main {
   text-align: left;
 }
 .c4d3 .wseoul .call {
-  width: 20rem;
-  height: 5.4rem;
+
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.7rem;
@@ -392,7 +404,6 @@ main {
   height: 6.4rem;
 }
 .c4d3 .help .help2 a {
-  width: 18.094rem;
   height: 4.1rem;
   padding: 1.1rem 5.5rem;
   border: 0.1rem solid #fff;

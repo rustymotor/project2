@@ -7,7 +7,7 @@ gsap.from('.c1h',{
     end:'100% 80%',
     ease:'expo',
     id:'박스5',
-    scrub:1,
+    // scrub:1,
     },
     y:200,
     opacity:0,
@@ -36,12 +36,12 @@ gsap.to('.content2 .ani2', {
 	stagger: 0.5,
 	scrollTrigger: {
 		trigger: '.content2',
-		start: '0% 30%',
-		end: '60% 40%',
-		scrub: true,
+		start: '0% 50%',
+		end: '30% 70%',
+		// scrub: true,
 		// pin:true, //화면고정
 
-		//markers: true,
+		// markers: true,
 		id: 'content2',
 	},
 });
@@ -54,12 +54,12 @@ gsap.to('.content3 .ani3', {
 	stagger: 0.5,
 	scrollTrigger: {
 		trigger: '.content3',
-		start: '0% 30%',
-		end: '60% 40%',
-		scrub: true,
+		start: '0% 60%',
+		end: '50% 100%',
+		// scrub: true,
 		// pin:true, //화면고정
 
-		//markers: true,
+		// markers: true,
 		id: 'content3',
 	},
 });
@@ -71,7 +71,7 @@ gsap.from('.content4',{
     end:'100% 80%',
    //markers:true,  //화면에 가이드선 표시
     id:'박스5',
-    scrub:1,
+    // scrub:1,
     },
     y:200,
     opacity:0,
@@ -90,7 +90,7 @@ ScrollTrigger.create({
 	end: '100% 80%',
     id:'핑크박스',
 	// end:'+=4000',
-	 scrub:true,
+	//  scrub:true,
 	// pin:true,
 	// anticipatePin:1,
 });
